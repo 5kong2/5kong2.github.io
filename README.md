@@ -1,6 +1,6 @@
-## 코드 : 크롬창 -> 교육창 -> F12 -> Console에 아래 코드 복붙 & 엔터
+## 크롬 -> F12 -> Console -> 복붙 -> 엔터
 
-var currentPage = nowPageNum;
+```var currentPage = nowPageNum;
 
 function goNextPage() {
     if (currentPage <= totalPageNum) {
@@ -24,21 +24,7 @@ function runKmuMacro() {
 }
 
 runKmuMacro();
-
-
-
-
-
-.
-.
-.
-.
-.
-.
-.
-.
-
-
+```
 
 
 

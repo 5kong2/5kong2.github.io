@@ -1,3 +1,49 @@
+## 코드 : 크롬창 -> 교육창 -> F12 -> Console에 아래 코드 복붙 & 엔터
+
+var currentPage = nowPageNum;
+
+function goNextPage() {
+    if (currentPage <= totalPageNum) {
+        PageMove2019AfterVersion(currentPage); 
+        console.log(`${currentPage} 페이지를 수강완료했습니다.`);
+        currentPage += 1;
+        setTimeout(function() {
+            goNextPage();
+        }, 1000);
+    } else {
+        alert('강의 수강이 완료되었습니다!');
+    }
+}
+
+function runKmuMacro() {
+    console.log(`현재 ${currentPage} 페이지를 수강중입니다.`);
+
+    setTimeout(function () {
+        goNextPage();
+    }, 1000)
+}
+
+runKmuMacro();
+
+
+
+
+
+.
+.
+.
+.
+.
+.
+.
+.
+
+
+
+
+
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/5kong2/5kong2.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.

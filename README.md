@@ -1,6 +1,7 @@
 ## 크롬 -> F12 -> Console -> 복붙 -> 엔터
 
-```var currentPage = nowPageNum;
+```markdown
+var currentPage = nowPageNum;
 
 function goNextPage() {
     if (currentPage <= totalPageNum) {

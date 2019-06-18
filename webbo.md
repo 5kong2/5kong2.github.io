@@ -1,4 +1,5 @@
 ## xss_selfProp.js
+
 ```markdown
 <script id="selfProp">
 

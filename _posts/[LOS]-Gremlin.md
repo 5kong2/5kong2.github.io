@@ -1,15 +1,24 @@
 ---
 title: "[LOS] - Gremlin"
 image: 
-  path: /images/so-simple-sample-image-3.jpg
-  thumbnail: /images/so-simple-sample-image-3-400x200.jpg
-  caption: "Photo from [WeGraphics](http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/)"
+  path: /images/gremlin_question.png
+  thumbnail: /images/gremlin_question-3000x300.png
+  caption: ""
 categories:
-  - Layout
+  - Practice
 tags:
   - content
   - image
   - layout
 last_modified_at: 2018-01-31T14:28:50-05:00
 ---
-<img src="image.jpg" class="align-center" alt="">
+문제 : 
+<img src="gremlin_question.png" class="align-center" alt="">
+
+정리 : 
+- Injection 문제
+- line 10의 if문을 고려했을 때, 이 코드는 id 값의 결과가 존재하면 solve 함수가 실행되는 구조인 것 같다.
+- 하지만 맨 윗단의 쿼리문을 봤을 때, id와 pw가 모두 참이어야 한다.
+
+풀이 : 
+<img src="gremlin_answer.png" class="align-center" alt="">

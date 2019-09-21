@@ -1,7 +1,12 @@
 ---
-title: "Web application security lecture"
-date: 2019-03-02 08:26:28 -0400
-categories: note
+title: "XSS js codes"
+categories:
+  - note
+tags:
+  - web
+  - security
+  - web-app
+last_modified_at: 2019-03-09T12:17:03-05:00
 ---
 
 ## xss_selfProp.js

@@ -1,3 +1,9 @@
+---
+title: "Web application security lecture"
+date: 2019-03-02 08:26:28 -0400
+categories: note
+---
+
 ## xss_selfProp.js
 ```markdown
 <script id="selfProp">

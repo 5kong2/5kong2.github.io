@@ -1,8 +1,8 @@
 ---
 title: "[LOS] - Gremlin"
 image: 
-  path: /images/gremlin_question.png
-  thumbnail: /images/gremlin_question-3000x300.png
+  path: ../images/gremlin_question.png
+  thumbnail: ../images/gremlin_question-3000x300.png
   caption: ""
 categories:
   - Practice
@@ -11,7 +11,7 @@ tags:
 last_modified_at: 2019-09-21T17:11:50-05:00
 ---
 문제 : 
-<img src="/images/gremlin_question.png" class="align-center" alt="">
+<img src="../images/gremlin_question.png" class="align-center" alt="">
 
 정리 : 
 - Injection 문제
